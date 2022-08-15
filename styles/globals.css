@@ -1,26 +1,48 @@
-html,
-body {
-  padding: 0;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
+}
+body{
+  color: white;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.footer_right * .MuiSlider-root{
+  color: green;
 }
 
-* {
-  box-sizing: border-box;
+.content::-webkit-scrollbar{
+  display: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.hidebar::-webkit-scrollbar{
+  display: none;
+}
+
+.hidebar{
+  overflow-x: scroll;
+}
+
+.body_icons > .MuiSvgIcon-root{
+  margin-right: 20px;
+}
+
+.body_shuffle{
+  font-size: 80px !important;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: green;
+}
+
+.body_shuffle:hover{
+  transition: 100ms transform ease-in;
+  transform: scale(1.08);
+}
+
+.play_icon{
+  font-size: 60px !important;
 }
